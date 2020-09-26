@@ -70,7 +70,7 @@ For a simple entry like this, the generated CRUD panel will even work â€œas isâ€
 The code above would generate:
 - a **migration** file
 - a **model** (```app\Models\Tag.php```)
-- a **request** file, for form validation (```app\Http\Requests\TagCrudRequest.php```)
+- a **request** file, for form validation (```app\Http\Requests\TagRequest.php```)
 - a **controller** file, where you can customize how the CrudPanel looks and feels (```app\Http\Controllers\Admin\TagCrudController.php```)
 - a **route**, as a line inside ```routes/backpack/custom.php```
 
