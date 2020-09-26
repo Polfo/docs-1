@@ -72,11 +72,10 @@ The code above would generate:
 - a **model** (```app\Models\Tag.php```)
 - a **request** file, for form validation (```app\Http\Requests\TagCrudRequest.php```)
 - a **controller** file, where you can customize how the CrudPanel looks and feels (```app\Http\Controllers\Admin\TagCrudController.php```)
-- a **route**, as a line inside ```routes/backpack/custom.php```
 
 It will also add:
-- a route inside ```routes/backpack/custom.php```, pointing to that controller;
-- a sidebar item inside ```resources/views/vendor/backpack/base/inc/sidebar_content.blade.php```;
+- a **route** inside ```routes/backpack/custom.php```, pointing to that controller;
+- a **sidebar item** inside ```resources/views/vendor/backpack/base/inc/sidebar_content.blade.php```;
 
 You might have noticed that **no views** are generated. That's because in most cases you _don't need_ custom views with Backpack. All your custom code is in the controller, model or request, so the default views are loaded, from the pacakge. If you do, however, need to customize a view, it is [ridiculously easy](/docs/{{version}}/crud-how-to#customize-views-for-each-crud-panel).
 
